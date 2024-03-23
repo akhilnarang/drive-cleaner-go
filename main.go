@@ -55,6 +55,12 @@ func main() {
 		log.Fatalf("Failed to list files: %v", err)
 	}
 
+	// Bail out early if no files are found
+	if len(files.Files) == 0 {
+		fmt.Println("No matching files found, exiting")
+		return
+	}
+
 	// Initialize a waitgroup
 	var wg sync.WaitGroup
 
