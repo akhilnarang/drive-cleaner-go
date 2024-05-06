@@ -33,8 +33,8 @@ func main() {
 	// Time 4 weeks ago
 	startTime := time.Now().AddDate(0, 0, -28)
 
-	// Time 3 weeks ago
-	endTime := startTime.AddDate(0, 0, 7)
+	// Time 2 weeks ago
+	endTime := startTime.AddDate(0, 0, 14)
 
 	// List out the files matching our criteria
 	files, err := client.
